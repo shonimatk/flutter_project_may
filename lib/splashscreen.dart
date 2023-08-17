@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'LoginPage.dart';
+import 'package:flutter_project_may/hivecrud/hivemain.dart';
 
 void main() {
   //to run an program //runapp to attach the widget
@@ -9,7 +10,7 @@ void main() {
     debugShowCheckedModeBanner: false,
     //default theme of app (multiplatform support)
     home:
-        Splashpage(), //initial screen of our app, home must be a widget it may be stateless or statefull
+        CRUD_HIVE(), //initial screen of our app, home must be a widget it may be stateless or statefull
   ));
 }
 

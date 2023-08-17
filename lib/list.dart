@@ -30,7 +30,15 @@ class _HomepageState extends State<Homepage> {
           Icon(Icons.search),
           SizedBox(
             width: 20,
-          )
+          ),
+          PopupMenuButton(itemBuilder: (context) {
+            return [
+              PopupMenuItem(child: Text("New Group")),
+              PopupMenuItem(child: Text("Payments")),
+              PopupMenuItem(child: Text("New Broadcast")),
+              PopupMenuItem(child: Text("Settings")),
+            ];
+          }),
         ],
       ),
       body: ListView(
